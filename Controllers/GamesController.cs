@@ -10,14 +10,14 @@ namespace NintendoGameApi.Controllers{
 
     public class GamesController : ControllerBase {
         
-        private readonly GamesService _gamessService;
+        private readonly GamesService _gamesService;
 
         public GamesController(GamesService gamesService){
-            _gamessService = gamesService;
+            _gamesService = gamesService;
         }
         [HttpGet]
         public ActionResult<List<Game>> Get(){
-            return _gamessService.Get();
+            return _gamesService.Get();
         }
     }
 }

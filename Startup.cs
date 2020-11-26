@@ -41,6 +41,12 @@ namespace NintendoGameApi
             );
 
             services.AddSingleton<GamesService>();
+
+            services.AddSingleton<ConsolesService>();
+
+            services.AddSingleton<CharactersService>();
+
+
         }
 
         
